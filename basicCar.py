@@ -12,6 +12,11 @@ class SUV(Car):
         self.space = l * w * h
         return self.space
 
+class Supercar(Car):
+    def calculatePowerScore(self, hp, torque):
+        self.powerScore = hp + torque
+        return self.powerScore
+
 def ipValidate(ipAddr):
     ipOctets = ipAddr.split(".")
     if len(ipOctets) != 4:
@@ -27,11 +32,11 @@ pressure = 12             #psi
 acceleration = car1.accelerate(pressure)
 print (str(acceleration))
 
-suv2 = SUV("Chevy", 454)
-l = 5
-w = 4
-h = 3
-print(str(suv2.calculateCargo(l, w, h)))
+suv2 = SUV("Blazer", 300)
+print(str(suv2.calculateCargo(5, 4, 3)))
+
+sc1 = Supercar("Vette", 454)
+print(str(sc1.calculatePowerScore(600, 625)))
 
 if ipValidate("2.128.90.344"):
     print("Ip address is valid")
