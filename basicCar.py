@@ -41,6 +41,7 @@ print(str(sc1.calculatePowerScore(600, 625)))
 if ipValidate("2.128.90.344"):
     print("Ip address is valid")
 else:
+    print("BADDDDD")
     print("Ip address is invalid")
 
 
