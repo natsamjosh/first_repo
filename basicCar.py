@@ -1,3 +1,8 @@
+class Bike:
+    def dummy():
+        return 1
+
+
 class Car:
     def __init__(self, brand, engine):
         self.brand = brand
