@@ -1,3 +1,4 @@
+## New comment
 class Bike:
     def dummy():
         return 1
